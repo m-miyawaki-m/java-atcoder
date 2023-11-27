@@ -1,8 +1,10 @@
-package contests.abc101.a;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+	//提出
+	//acc submit -s -- -l 5005
+
         Scanner scanner = new Scanner(System.in);
 
         // 文字列 S を入力として受け取る
@@ -11,7 +13,7 @@ public class Main {
         // 初期値を設定
         int result = 0;
 
-        // 文字列の各文字を順に処理
+        // テンプレサンプル
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '+') {
@@ -20,8 +22,9 @@ public class Main {
                 result--;
             }
         }
-        scanner.close();
+
         // 最終的な結果を出力
         System.out.println(result);
+        scanner.close();
     }
 }
