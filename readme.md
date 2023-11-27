@@ -6,17 +6,17 @@ Atcoderの環境構築
 atcoder-cli、online-judge-toolsをjavaで環境構築する
 ```bash
 # contents以下を、任意のコンテストに変更
-acc new /workspaces/java-atcoder/contests/abc101
+acc new abc101
 
 # テスト contests以下を、任意のコンテストと問題番号に変更＋/tests/
-oj t -c "java Main.java" -d /workspaces/java-atcoder/contests/abc101/a/tests/  
+oj t -c "java Main.java" -d ./tests/  
 
 # 提出
 # 言語（java17）を指定して提出。「abc101_b」を修正する
-oj s -l 5005 https://atcoder.jp/contests/abc101/tasks/abc101_a /workspaces/java-atcoder/contests/abc101/a/Main.java
+oj s -l 5005 https://atcoder.jp/contests/abc101/tasks/abc101_a Main.java
 
 # 提出時の注意（URLが違う場合がある）
-oj s -l 5005 https://atcoder.jp/contests/abc101/tasks/arc099_a /workspaces/java-atcoder/contests/abc101/b/Main.java
+oj s -l 5005 https://atcoder.jp/contests/abc101/tasks/arc099_a Main.java
 ```
 
 以下、詳細
