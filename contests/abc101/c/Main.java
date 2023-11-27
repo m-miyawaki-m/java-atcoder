@@ -14,5 +14,6 @@ public class Main {
 
         // 結果を出力する
         System.out.println(minOperations);
+        scanner.close();
     }
 }

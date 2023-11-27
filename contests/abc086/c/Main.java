@@ -19,7 +19,7 @@ public class Main {
                 result--;
             }
         }
-
+        scanner.close();
         // 最終的な結果を出力
         System.out.println(result);
     }

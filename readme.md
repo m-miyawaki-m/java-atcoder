@@ -12,6 +12,9 @@ acc new abc101
 oj t -c "java Main.java" -d ./tests/  
 
 # 提出
+acc submit -s -- -l 5005
+
+
 # 言語（java17）を指定して提出。「abc101_b」を修正する
 oj s -l 5005 https://atcoder.jp/contests/abc101/tasks/abc101_a Main.java
 
