@@ -6,6 +6,7 @@ Atcoderの環境構築
 atcoder-cli、online-judge-toolsをjavaで環境構築する
 ```bash
 # contents以下を、任意のコンテストに変更
+cd /workspaces/java-atcoder/contests/
 acc new abc101
 
 # テスト contests以下を、任意のコンテストと問題番号に変更＋/tests/
@@ -104,19 +105,15 @@ rm -rf ./abc101
 # configファイルの場所（config.json  session.json）
 acc config-dir
 ```
-- /atcoder-cli-nodejs/java
+- /home/vscode/.config/atcoder-cli-nodejs/java
     ∟ Main.java
     ∟ template.json
 
 ```json
 {
-    {
-        "task":{
-            "program":["Main.java"],
-            "submit":"Main.java"
-        }
+    "task":{
+        "program":["Main.java"],
+        "submit":"Main.java"
     }
 }
-
-
 ```
