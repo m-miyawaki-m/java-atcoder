@@ -1,0 +1,196 @@
+{
+  "contest": {
+    "id": "oupc2023-day1",
+    "title": "OUPC 2023 Day1 : 大阪大学セット",
+    "url": "https://atcoder.jp/contests/oupc2023-day1"
+  },
+  "tasks": [
+    {
+      "id": "oupc2023_day1_a",
+      "label": "A",
+      "title": "Mijingiri",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_b",
+      "label": "B",
+      "title": "Gomamayo",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_c",
+      "label": "C",
+      "title": "Caesar Cipher",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_d",
+      "label": "D",
+      "title": "Han Burger",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_d",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_e",
+      "label": "E",
+      "title": "Han Burger 2",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_e",
+      "directory": {
+        "path": "e",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_f",
+      "label": "F",
+      "title": "Remainder of Max Problem",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_f",
+      "directory": {
+        "path": "f",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_g",
+      "label": "G",
+      "title": "Impassable Game",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_g",
+      "directory": {
+        "path": "g",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_h",
+      "label": "H",
+      "title": "Wonderful Stage",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_h",
+      "directory": {
+        "path": "h",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_i",
+      "label": "I",
+      "title": "Min!? Max!? Max!? Min!?",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_i",
+      "directory": {
+        "path": "i",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_j",
+      "label": "J",
+      "title": "Sum Sum",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_j",
+      "directory": {
+        "path": "j",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_k",
+      "label": "K",
+      "title": "Minimize Transfer Time",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_k",
+      "directory": {
+        "path": "k",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_l",
+      "label": "L",
+      "title": "KowerKoint Doko",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_l",
+      "directory": {
+        "path": "l",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_m",
+      "label": "M",
+      "title": "Can't Be UT",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_m",
+      "directory": {
+        "path": "m",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_n",
+      "label": "N",
+      "title": "Bench",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_n",
+      "directory": {
+        "path": "n",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_o",
+      "label": "O",
+      "title": "Special Matrix",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_o",
+      "directory": {
+        "path": "o",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_p",
+      "label": "P",
+      "title": "Score for Cutting Graph",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_p",
+      "directory": {
+        "path": "p",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    },
+    {
+      "id": "oupc2023_day1_q",
+      "label": "Q",
+      "title": "Kurukuru",
+      "url": "https://atcoder.jp/contests/oupc2023-day1/tasks/oupc2023_day1_q",
+      "directory": {
+        "path": "q",
+        "testdir": "tests",
+        "submit": "Main.java"
+      }
+    }
+  ]
+}
