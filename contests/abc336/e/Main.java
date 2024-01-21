@@ -3,35 +3,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        int[] A = new int[N];
-        for (int i = 0; i < N; i++) {
-            A[i] = scanner.nextInt();
-        }
+        long N = scanner.nextLong();
         scanner.close();
 
-        System.out.println(findMaxPyramidSize(A));
+        long count = 0;
+        for (long i = 1; i <= N; i++) {
+            if (i % digitSum(i) == 0) {
+                count++;
+            }
+        }
+
+        System.out.println(count);
     }
 
-    private static int findMaxPyramidSize(int[] A) {
-        int maxPyramidSize = 0;
-        for (int i = 0; i < A.length; i++) {
-            int size = 1;
-            int minLeft = A[i];
-            int minRight = A[i];
-
-            // 左側を調べる
-            for (int j = i - 1; j >= 0 && A[j] <= minLeft; j--, size++) {
-                minLeft = A[j];
-            }
-
-            // 右側を調べる
-            for (int j = i + 1; j < A.length && A[j] <= minRight; j++, size++) {
-                minRight = A[j];
-            }
-
-            maxPyramidSize = Math.max(maxPyramidSize, size /2); // 中心を含めたピラミッドのサイズを計算
+    private static int digitSum(long n) {
+        int sum = 0;
+        while (n > 0) {
+            sum += n % 10; // 最下位の桁を加える
+            n /= 10;       // 次の桁へ移動
         }
-        return maxPyramidSize;
+        return sum;
     }
 }
