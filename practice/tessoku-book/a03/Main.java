@@ -5,14 +5,35 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // 文字列 S を入力として受け取る
-        String[] strings = scanner.next().split("");
+        int N = scanner.nextInt();
+        int K = scanner.nextInt();
+        scanner.nextLine();  // 追加: 余分な改行文字を消費
+        int[] nums_p = Arrays.stream(scanner.nextLine().split(" "))
+        .mapToInt(Integer::parseInt)
+        .toArray();
 
-        // stream を使って文字列の各文字を順に処理
-        long num = Arrays.stream(strings).filter(s -> s.equals("1")).count();
+        int[] nums_q = Arrays.stream(scanner.nextLine().split(" "))
+        .mapToInt(Integer::parseInt)
+        .toArray();
 
-        // 最終的な結果を出力
-        System.out.println(num);
+        boolean checkCards = checkSum(K, nums_p, nums_q);
+        String result = "No";
+        if (checkCards) {
+            result = "Yes";
+        }
+
+        System.out.println(result);
+
         scanner.close();
+    }
+    public static boolean checkSum(int K, int[] nums_p, int[] nums_q) {
+        for (int num_p : nums_p) {
+            for (int num_q : nums_q) {
+                if (num_p + num_q == K) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

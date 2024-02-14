@@ -5,14 +5,36 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // 文字列 S を入力として受け取る
-        String[] strings = scanner.next().split("");
+        int N = scanner.nextInt();
+        int X = scanner.nextInt();
+        scanner.nextLine();  // 追加: 余分な改行文字を消費
+        int[] nums = Arrays.stream(scanner.nextLine().split(" "))
+        .mapToInt(Integer::parseInt)
+        .toArray();
 
-        // stream を使って文字列の各文字を順に処理
-        long num = Arrays.stream(strings).filter(s -> s.equals("1")).count();
+        String result = "No";
 
-        // 最終的な結果を出力
-        System.out.println(num);
+        // method01
+        int num = 0;
+        num = method01(N, X, nums);
+        if (num > 0) {
+            result = "Yes";
+        }
+
+        //method02
+        // if (method02(N, X, nums)) {
+        //     result = "Yes";
+        // }
+
+        System.out.println(result);
+
         scanner.close();
+    }
+    public static int method01(int n, int x, int[] nums) {
+        // System.out.println(Arrays.toString(nums));
+        return (int)Arrays.stream(nums).filter(num -> num==x).count();
+    }
+    public static boolean method02(int n, int x, int[] nums) {
+        return Arrays.stream(nums).anyMatch(num -> num==x);
     }
 }
