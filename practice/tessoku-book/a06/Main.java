@@ -1,18 +1,28 @@
 import java.util.Scanner;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // 文字列 S を入力として受け取る
-        String[] strings = scanner.next().split("");
+        int N = scanner.nextInt();
+        int Q = scanner.nextInt();
 
-        // stream を使って文字列の各文字を順に処理
-        long num = Arrays.stream(strings).filter(s -> s.equals("1")).count();
+        int[] cumSum = new int[N];
+        cumSum[0] = scanner.nextInt();
+        
+        for (int i = 1; i < N; i++) {
+            cumSum[i] = cumSum[i - 1] + scanner.nextInt();
+        }
 
-        // 最終的な結果を出力
-        System.out.println(num);
+        for (int i = 0; i < Q; i++) {
+            int L = scanner.nextInt() - 1;
+            int R = scanner.nextInt() - 1;
+            int rangeSum = (L == 0) ? cumSum[R] : cumSum[R] - cumSum[L - 1];
+            System.out.println(rangeSum);
+        }
+
         scanner.close();
     }
 }
