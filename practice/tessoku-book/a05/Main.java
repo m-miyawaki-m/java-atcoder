@@ -5,11 +5,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // 文字列 S を入力として受け取る
-        String[] strings = scanner.next().split("");
+        int N = scanner.nextInt();
+        int K = scanner.nextInt();
 
-        // stream を使って文字列の各文字を順に処理
-        long num = Arrays.stream(strings).filter(s -> s.equals("1")).count();
+        int num = 0;
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= N; j++) {
+                int k = K - i - j;
+                if (k >= 1 && k <= N) {
+                    num++;
+                }
+            }
+        }
 
         // 最終的な結果を出力
         System.out.println(num);
