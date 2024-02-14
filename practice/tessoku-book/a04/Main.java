@@ -5,14 +5,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // 文字列 S を入力として受け取る
-        String[] strings = scanner.next().split("");
+        int N = scanner.nextInt();
+        scanner.nextLine();  // 追加: 余分な改行文字を消費
 
-        // stream を使って文字列の各文字を順に処理
-        long num = Arrays.stream(strings).filter(s -> s.equals("1")).count();
-
-        // 最終的な結果を出力
-        System.out.println(num);
+        // Nを2進数に変換し、10桁で表示
+        String binary = Integer.toBinaryString(N);
+        String formattedBinary = String.format("%10s", binary).replace(' ', '0');
+        System.out.println(formattedBinary);
         scanner.close();
     }
 }
