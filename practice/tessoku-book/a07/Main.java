@@ -5,14 +5,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // 文字列 S を入力として受け取る
-        String[] strings = scanner.next().split("");
+        int D = scanner.nextInt(); // 整数 D を入力として受け取る
+        int N = scanner.nextInt(); // 整数 N を入力として受け取る
 
-        // stream を使って文字列の各文字を順に処理
-        long num = Arrays.stream(strings).filter(s -> s.equals("1")).count();
+        // D日間のイベント
+        int[] nums = new int[D];
+
+        for (int i = 0; i < N; i++) {
+            int L = scanner.nextInt() - 1;
+            int R = scanner.nextInt() - 1;
+
+            for(int j=L; j<=R; j++){
+                nums[j]++;
+            }
+        }
 
         // 最終的な結果を出力
-        System.out.println(num);
+        for(int num : nums){
+           System.out.println(num);
+        }
         scanner.close();
     }
 }
